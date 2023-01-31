@@ -3,7 +3,7 @@ import pandas as pd
 
 end = '\n\n'
 
-data = pd.read_csv('../StudentsPerformance.csv')
+data = pd.read_csv('../../Chapter_1/StudentsPerformance.csv')
 
 # 1) What proportion of students from the dataset have free/reduced in the lunch column?:
 total_num = data.shape[0]

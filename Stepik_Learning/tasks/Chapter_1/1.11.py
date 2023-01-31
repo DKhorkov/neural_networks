@@ -3,7 +3,7 @@ import pandas as pd
 
 """Найти айди Анатолия Карпова. Логика: больше всего попыток"""
 
-submissions_data = pd.read_csv('../submissions_data_train.csv')
+submissions_data = pd.read_csv('../../Chapter_1/submissions_data_train.csv')
 submissions_data['date'] = pd.to_datetime(submissions_data.timestamp, unit='s')
 submissions_data['day'] = submissions_data['date'].dt.date
 
