@@ -2,7 +2,6 @@ import pandas as pd
 from sklearn import tree
 from sklearn.model_selection import train_test_split
 import pydotplus
-import matplotlib.pyplot as plt
 
 
 """Обучить модель, чтобюы она на основе фич предсказала, выживет ли пассажир"""
