@@ -69,7 +69,7 @@ last_day_visit['date'] = pd.to_datetime(last_day_visit.timestamp, unit='s').dt.d
 last_day_visit['days_gone'] = data_upload_day - last_day_visit['date']
 
 # Если последнее посещение было позже, чем значение нашего трешхолда, то юзер дропнул курс:
-drop_out_threshold = pd.to_timedelta(30)
+drop_out_threshold = pd.to_timedelta(30 * 24 * 60 * 60 * 1_000_000_000)
 last_day_visit['user_is_gone'] = last_day_visit['days_gone'] > drop_out_threshold
 
 """Добавим к получившейся таблице данные о количестве успешных и проваленных попыток, а также добавим информацию 
