@@ -1,6 +1,5 @@
 import pandas as pd
 from sklearn import tree
-from sklearn.metrics import precision_score, recall_score
 from sklearn.model_selection import train_test_split, RandomizedSearchCV
 import matplotlib.pyplot as plt
 
