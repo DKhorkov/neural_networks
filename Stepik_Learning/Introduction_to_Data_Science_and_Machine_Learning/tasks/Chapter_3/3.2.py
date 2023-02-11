@@ -3,6 +3,15 @@ from sklearn.ensemble import RandomForestClassifier
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+"""Let's take heart disease data and train Random Forest on it.
+Build a graph of the importance of variables for classification and choose the most similar among the proposed options.
+
+There is randomness in the task, run random forest training and plotting several times to see
+changes in the importance of features (the 5 most important are usually in the top, just in a different order).
+To get the same graph as in the correct answer, do"""
+
+
 url = "https://raw.githubusercontent.com/sanyathisside/Predicting-Heart-Disease-using-Machine-" \
       "Learning/master/heart-disease.csv"
 
